@@ -64,23 +64,23 @@ def decrypt_notes():
 
 window = Tk()
 window.title("Secret Notes")
-window.config(padx=30, pady=30)
+window.config(padx=20, pady=20)
 
-canvas = Canvas(height=200, width=200)
-logo = PhotoImage(file="topsecret.png")
-canvas.create_image(100,100,image=logo)
+canvas = Canvas(height=100, width=100)
+logo = PhotoImage(file="img_1.png")
+canvas.create_image(50,50,image=logo)
 canvas.pack()
 
-title_info_label = Label(text="Enter your title",font=("Verdena",20,"normal"))
+title_info_label = Label(text="Enter your title",font=("Verdena",15,"normal"))
 title_info_label.pack()
 
 title_entry = Entry(width=30)
 title_entry.pack()
 
-input_info_label = Label(text="Enter your secret",font=("Verdena",20,"normal"))
+input_info_label = Label(text="Enter your secret",font=("Verdena",15,"normal"))
 input_info_label.pack()
 
-input_text = Text(width=50, height=25)
+input_text = Text(width=30, height=15)
 input_text.pack()
 
 master_secret_label = Label(text="Enter master key",font=("Verdena",20,"normal"))
